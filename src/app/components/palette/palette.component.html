@@ -1,0 +1,11 @@
+<div class="palette-container">
+    <div class="palette">
+        @for(color of palette; track color){
+      <div [ngStyle]="{'background-color': color}" class="color-box">
+        {{ color }}
+      </div>
+    }
+    </div>
+  </div>
+  <button (click)="generatePalette()">Generate Palette</button>
+  
